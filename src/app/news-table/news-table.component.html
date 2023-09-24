@@ -1,0 +1,37 @@
+<div class="container" *ngIf="newsFeed$ | async as newsFeed">
+  <mat-card *ngFor="let article of newsFeed.articles" class="card">
+    <mat-card-header>
+      <mat-card-title>{{ article.title }}</mat-card-title>
+    </mat-card-header>
+    <img mat-card-image src="{{ article.urlToImage }}" alt="Card Image" />
+    <mat-card-content>
+      {{ article.description }}
+    </mat-card-content>
+  </mat-card>
+  <!-- <mat-paginator
+    [length]="newsFeed.articles.length"
+    [pageSize]="6"
+    [length]="newsFeed.totalResults"
+    [pageIndex]="currentPageIndex"
+    (page)="onPageChange($event)"
+  >
+  </mat-paginator> -->
+
+  <mat-paginator
+    [length]="newsFeed.articles.length"
+    [pageSize]="6"
+    [length]="newsFeed.totalResults"
+    [pageIndex]="currentPageIndex"
+    (page)="onPageChange($event)"
+  >
+    <button mat-icon-button [disabled]="currentPageIndex === 0">
+      <mat-icon>keyboard_arrow_left</mat-icon>
+    </button>
+    <button
+      mat-icon-button
+      [disabled]="currentPageIndex === newsFeed.articles.length / 6"
+    >
+      <mat-icon>keyboard_arrow_right</mat-icon>
+    </button>
+  </mat-paginator>
+</div>

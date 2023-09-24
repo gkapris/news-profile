@@ -1,0 +1,31 @@
+<header class="header" fxLayout="column" fxLayoutAlign="center center">
+  <div fxLayout="row" fxLayoutGap="100px" fxLayoutAlign="center last">
+    <div>
+      <mat-form-field>
+        <input matInput placeholder="Search" #searchInput />
+      </mat-form-field>
+      <!-- Search Button -->
+      <button
+        mat-raised-button
+        color="accent"
+        (click)="onSearchClick(searchInput.value)"
+      >
+        Search
+      </button>
+    </div>
+
+    <!-- Dropdown -->
+    <div>
+      <mat-form-field>
+        <mat-select
+          placeholder="Select Category"
+          (selectionChange)="onCategorySelect($event)"
+        >
+          <mat-option *ngFor="let category of categories" [value]="category">
+            {{ category }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+  </div>
+</header>
