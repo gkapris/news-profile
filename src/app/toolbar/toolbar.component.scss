@@ -1,11 +1,10 @@
-.header {
-    background-color: rgb(55, 130, 106);
-    padding: 10px;
-    color: #fff;
+.input-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+
+  .input {
+    width: 45%; /* Adjust the width of input fields as needed */
   }
-  
-  .header-title {
-    font-size: 24px;
-    margin-right: 20px;
-  }
-  
+}
