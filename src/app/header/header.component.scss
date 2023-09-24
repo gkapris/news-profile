@@ -1,31 +1,25 @@
-/* Apply styles to the entire toolbar component */
 mat-toolbar {
-    background-color: #1976D2; /* Set the background color to your desired color */
-    color: white; /* Set text color to white or your desired color */
-  }
-  
-  /* Style the content within the toolbar */
-  .toolbar-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    padding: 0 16px; /* Add horizontal padding to the content */
-  }
-  
-  /* Style the title in the center */
-  .toolbar-title {
-    font-size: 24px;
-    font-weight: bold;
-  }
-  
-  /* Style the spacer to push buttons to the right */
-  .spacer {
-    flex-grow: 1;
-  }
-  
-  /* Style the icons within buttons (optional) */
-  button mat-icon {
-    font-size: 24px;
-  }
-  
+  background-color: #1976d2;
+  color: white;
+}
+
+.toolbar-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 16px;
+}
+
+.toolbar-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.spacer {
+  flex-grow: 1;
+}
+
+button mat-icon {
+  font-size: 24px;
+}

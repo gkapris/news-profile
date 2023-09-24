@@ -4,8 +4,8 @@
   margin-bottom: 20px;
 
   .profile-photo {
-    width: 100px; /* Adjust size as needed */
-    height: 100px; /* Adjust size as needed */
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     overflow: hidden;
     margin-right: 20px;
@@ -18,17 +18,16 @@
   }
   .profile-details {
     p {
-      font-size: 18px; /* Adjust font size as needed */
+      font-size: 18px;
       font-weight: bold;
-      /* Add other styles as needed */
     }
   }
 }
 
 .background-image {
-  height: 20%; /* Set the height to 20% of the viewport */
+  height: 20%;
   width: 100%;
-  background-image: url("https://media.cntraveler.com/photos/5eb18e42fc043ed5d9779733/16:9/w_1920%2Cc_limit/BlackForest-Germany-GettyImages-147180370.jpg"); /* Add your background image URL here */
+  background-image: url("https://media.cntraveler.com/photos/5eb18e42fc043ed5d9779733/16:9/w_1920%2Cc_limit/BlackForest-Germany-GettyImages-147180370.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
